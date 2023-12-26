@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ConsultarApplication<consultar>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ms_consultar.consultar.ConsultarApplication",
+            "projectName": "consultar",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63134 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=consultar"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-OperarApplication<operar>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ms_operar.operar.OperarApplication",
+            "projectName": "operar",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
