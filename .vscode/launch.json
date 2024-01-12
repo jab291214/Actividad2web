@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "EurekaApplication",
+            "request": "launch",
+            "mainClass": "ms_eureka.eureka.EurekaApplication"
+        },
+        {
+            "type": "java",
             "name": "Spring Boot-ConsultarApplication<consultar>",
             "request": "launch",
             "cwd": "${workspaceFolder}",
@@ -18,6 +24,16 @@
             "cwd": "${workspaceFolder}",
             "mainClass": "ms_operar.operar.OperarApplication",
             "projectName": "operar",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaApplication<eureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "ms_eureka.eureka.EurekaApplication",
+            "projectName": "eureka",
             "args": "",
             "envFile": "${workspaceFolder}/.env"
         }
