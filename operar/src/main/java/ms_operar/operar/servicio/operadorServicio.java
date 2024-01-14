@@ -39,6 +39,13 @@ public class operadorServicio implements OperadorServicioInt {
 
     }
 
+    public Producto getById (String operador){
+        Producto productos = productofacade.obtenerProductobyid(operador);
+                return productos;
+
+    }
+
+
     public List<Producto> obtenerProductosByItem(operadorRequerido item) {
          
         List<Producto> productos = item.getProductos().stream()
